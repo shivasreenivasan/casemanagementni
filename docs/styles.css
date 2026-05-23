@@ -1024,3 +1024,102 @@ main.content {
     background: linear-gradient(135deg, #13343b, #0f5f6f);
   }
 }
+
+/* ========================================
+   Strong mobile fixes
+======================================== */
+
+@media (max-width: 768px) {
+
+  main.content {
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .top-banner {
+    margin-bottom: 1.5rem;
+  }
+
+  .top-banner img {
+    width: 100%;
+    max-height: 260px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 18px;
+  }
+
+  .trust-badges {
+    gap: 0.6rem;
+  }
+
+  .trust-badges span {
+    font-size: 0.9rem;
+    padding: 0.55rem 0.8rem;
+  }
+
+  .hero-section {
+    padding: 2rem 1rem;
+    border-radius: 20px;
+  }
+
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .why-grid,
+  .support-grid,
+  .audience-grid,
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pathway-strip {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .pathway-strip div {
+    padding: 1rem;
+  }
+
+  .testimonial-card {
+    width: 260px;
+  }
+
+  .floating-contact {
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    text-align: center;
+  }
+
+  .final-cta {
+    padding: 2rem 1rem;
+    border-radius: 22px;
+  }
+}
+
+@media (max-width: 420px) {
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.35rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .top-banner img {
+    max-height: 220px;
+  }
+
+  .button-link {
+    width: 100%;
+    text-align: center;
+  }
+}
