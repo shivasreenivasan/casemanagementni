@@ -1,13 +1,14 @@
 ---
 title: "Case Management NI"
 title-block-banner: false
+toc: false
 ---
 
-<div class="top-banner">
-  <img src="images/social-preview.png" alt="Case Management NI banner">
-</div>
+::: {.top-banner}
+![Case Management NI banner](images/social-preview.png)
+:::
 
-::: {.hero-section}
+::: {.hero-section role="banner"}
 
 # Independent Case Management Across Northern Ireland
 
@@ -17,12 +18,12 @@ Professional, person-centred support following serious injury, illness, and comp
 
 :::
 
-::: {.trust-badges}
+::: {.trust-badges role="list" aria-label="Credentials"}
 
-<span>HCPC Registered</span>
-<span>Northern Ireland Wide</span>
-<span>Person-Centred Support</span>
-<span>Collaborative Rehabilitation</span>
+[HCPC Registered]{role="listitem"}
+[Northern Ireland Wide]{role="listitem"}
+[Person-Centred Support]{role="listitem"}
+[Collaborative Rehabilitation]{role="listitem"}
 
 :::
 
@@ -37,7 +38,7 @@ We help coordinate therapy, care, equipment, community services, and ongoing sup
 ::: {.service-card}
 ### Case Management
 
-We work with clients, families, solicitors, insurers, and healthcare professionals to keep plans clear, joined-up, and realistic.
+We work with clients, families, solicitors, insurers, and healthcare professionals to keep plans clear, joined up, and realistic.
 :::
 
 ::: {.service-card}
@@ -47,90 +48,63 @@ Every plan is shaped around the person, their goals, their family, and their eve
 :::
 
 ::: {.highlight-box}
-## Our Approach
+### Our Approach
 
 Clear communication, practical planning, and compassionate support are at the centre of everything we do.
 :::
-
-## Current Industry Partners
-
-::: {.partner-banner}
-<div class="partner-track">
-
-<span>Brain Injury Matters</span>
-
-<span>Rehab Without Walls</span>
-
-<span>NI Community Support Network</span>
-
-<span>Independent Occupational Therapy Services</span>
-
-<span>Case Management Society UK</span>
-
-<span>Community Rehabilitation Providers</span>
-
-<span>Brain Injury Matters</span>
-
-<span>Rehab Without Walls</span>
-
-<span>NI Community Support Network</span>
-
-<span>Independent Occupational Therapy Services</span>
-
-</div>
-:::
-
-<a href="contact.html" class="floating-contact">
-Contact Us
-</a>
 
 ## Our Focus
 
 ::: {.stats-grid}
 
-<div class="stat-card">
-<h2>Person-Centred</h2>
-<p>Support tailored to individual goals and everyday life.</p>
-</div>
+::: {.stat-card}
+### Person-Centred
 
-<div class="stat-card">
-<h2>Collaborative</h2>
-<p>Working alongside families and professionals.</p>
-</div>
+Support tailored to individual goals and everyday life.
+:::
 
-<div class="stat-card">
-<h2>Independent</h2>
-<p>Clear, practical, evidence-informed coordination.</p>
-</div>
+::: {.stat-card}
+### Collaborative
+
+Working alongside families and professionals.
+:::
+
+::: {.stat-card}
+### Independent
+
+Clear, practical, evidence-informed coordination.
+:::
 
 :::
 
-## What People Say
+## What People Say {.visually-hidden-heading}
 
-::: {.testimonial-carousel}
-<div class="testimonial-track">
+::: {.testimonial-grid}
 
-<div class="testimonial-card">
-<p>“Professional, compassionate, and highly organised support throughout rehabilitation.”</p>
-<strong>Family member</strong>
-</div>
+::: {.testimonial-card}
+"Professional, compassionate, and highly organised support throughout rehabilitation."
 
-<div class="testimonial-card">
-<p>“Clear communication and practical coordination made a complex situation much easier to manage.”</p>
-<strong>Solicitor</strong>
-</div>
+**Family member**
+:::
 
-<div class="testimonial-card">
-<p>“The support felt calm, consistent, and genuinely person-centred.”</p>
-<strong>Client feedback</strong>
-</div>
+::: {.testimonial-card}
+"Clear communication and practical coordination made a complex situation much easier to manage."
 
-<div class="testimonial-card">
-<p>“Reliable, thoughtful, and focused on meaningful outcomes.”</p>
-<strong>Healthcare professional</strong>
-</div>
+**Solicitor**
+:::
 
-</div>
+::: {.testimonial-card}
+"The support felt calm, consistent, and genuinely person-centred."
+
+**Client feedback**
+:::
+
+::: {.testimonial-card}
+"Reliable, thoughtful, and focused on meaningful outcomes."
+
+**Healthcare professional**
+:::
+
 :::
 
 ## Who We Help
@@ -167,11 +141,38 @@ Joined-up working with therapists, clinicians, and support providers.
 
 ::: {.pathway-strip}
 
-<div><strong>1</strong><span>Enquiry</span></div>
-<div><strong>2</strong><span>Discussion</span></div>
-<div><strong>3</strong><span>Assessment</span></div>
-<div><strong>4</strong><span>Planning</span></div>
-<div><strong>5</strong><span>Coordination</span></div>
+:::: {}
+**1** [Enquiry]{.pathway-label}
+::::
+
+:::: {}
+**2** [Discussion]{.pathway-label}
+::::
+
+:::: {}
+**3** [Assessment]{.pathway-label}
+::::
+
+:::: {}
+**4** [Planning]{.pathway-label}
+::::
+
+:::: {}
+**5** [Coordination]{.pathway-label}
+::::
+
+:::
+
+## Current Industry Partners
+
+::: {.partner-grid role="list" aria-label="Industry partners"}
+
+[Brain Injury Matters]{role="listitem"}
+[Rehab Without Walls]{role="listitem"}
+[NI Community Support Network]{role="listitem"}
+[Independent Occupational Therapy Services]{role="listitem"}
+[Case Management Society UK]{role="listitem"}
+[Community Rehabilitation Providers]{role="listitem"}
 
 :::
 

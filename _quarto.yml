@@ -9,11 +9,12 @@ website:
   twitter-card: true
 
   navbar:
+    background: light
     left:
       - href: index.qmd
         text: Home
       - text: Services
-        menu: 
+        menu:
           - href: services.qmd
             text: Overview
           - href: services/brain-injury.qmd
@@ -26,35 +27,46 @@ website:
         text: Referrals
       - href: professionals.qmd
         text: Professionals
-      - href: faq.qmd
-        text: FAQ
       - href: about.qmd
         text: About
-      - href: resources.qmd
-        text: Resources
       - href: contact.qmd
         text: Contact
-      - href: privacy.qmd
-        text: Privacy
+    right:
+      - icon: question-circle
+        href: faq.qmd
+        aria-label: "Frequently asked questions"
+    tools:
+      - icon: moon
+        id: quarto-color-scheme-toggle
+        aria-label: "Toggle dark mode"
 
   page-footer:
-    left: "© Case Management NI"
+    border: true
+    left: "© 2026 Case Management NI"
+    center:
+      - text: "Privacy"
+        href: privacy.qmd
+      - text: "FAQ"
+        href: faq.qmd
+      - text: "Resources"
+        href: resources.qmd
     right:
       - text: "Contact"
         href: contact.qmd
-      - text: "Resources"
-        href: resources.qmd
 
 format:
   html:
-    theme: dracula
+    theme:
+      light: [flatly, theme-light.scss]
+      dark: [darkly, theme-dark.scss]
     css: styles.css
     toc: true
     toc-location: left
-    page-layout: full
+    page-layout: article
+    mainfont: "Source Sans 3"
     image: images/social-preview.png
     include-in-header:
       text: |
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">

@@ -1,0 +1,250 @@
+/*-- scss:defaults --*/
+
+// Dark palette
+$dark-bg: #0f1720;
+$dark-surface: #16212b;
+$dark-border: #253744;
+$dark-text: #dbe7ec;
+$dark-heading: #f2f7fa;
+$dark-muted: #9ab3bf;
+
+$teal-light: #72c6e6;
+$teal-accent: #8ad4e8;
+$rose-light: #ff7da2;
+
+$body-bg: $dark-bg;
+$body-color: $dark-text;
+$link-color: $teal-light;
+$link-hover-color: $rose-light;
+$headings-color: $dark-heading;
+$border-color: $dark-border;
+
+$navbar-bg: rgba(15, 23, 32, 0.88);
+$navbar-fg: $dark-text;
+
+$footer-bg: $dark-bg;
+$footer-fg: $dark-muted;
+
+/*-- scss:rules --*/
+
+// ----------------------------------------
+// Navbar
+// ----------------------------------------
+
+.navbar {
+  border-bottom: 1px solid $dark-border;
+  backdrop-filter: blur(12px);
+}
+
+// ----------------------------------------
+// Typography
+// ----------------------------------------
+
+h2 {
+  color: $teal-accent;
+  border-top-color: $dark-border;
+}
+
+p {
+  color: $dark-text;
+}
+
+// ----------------------------------------
+// Hero
+// ----------------------------------------
+
+.hero-section {
+  background: linear-gradient(135deg, #13343b 0%, #132733 50%, #2a1525 100%);
+
+  h1 {
+    color: $dark-heading;
+  }
+
+  p {
+    color: $dark-muted;
+  }
+}
+
+// ----------------------------------------
+// Cards (all types)
+// ----------------------------------------
+
+.service-card,
+.stat-card,
+.audience-card,
+.why-card,
+.support-card,
+.process-step,
+.testimonial-card,
+.referral-form {
+  background: $dark-surface;
+  border-color: $dark-border;
+  box-shadow: none;
+
+  &:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.service-card h3,
+.stat-card h2,
+.audience-card h3,
+.why-card h3,
+.support-card h3,
+.process-step h3,
+.testimonial-card strong {
+  color: $teal-accent;
+}
+
+.stat-card h2 {
+  border-top: none;
+}
+
+// ----------------------------------------
+// Highlight box
+// ----------------------------------------
+
+.highlight-box {
+  background: #2a1620;
+  border-color: $dark-border;
+  border-left-color: $rose-light;
+}
+
+// ----------------------------------------
+// Trust badges
+// ----------------------------------------
+
+.trust-badges span {
+  background: $dark-surface;
+  border-color: $dark-border;
+  color: $teal-accent;
+}
+
+// ----------------------------------------
+// Partner grid
+// ----------------------------------------
+
+.partner-grid span {
+  background: $dark-surface;
+  border-color: $dark-border;
+  color: $dark-text;
+}
+
+// ----------------------------------------
+// Pathway strip
+// ----------------------------------------
+
+.pathway-strip {
+  div {
+    background: linear-gradient(135deg, #132733, $dark-surface);
+    border-color: $dark-border;
+  }
+
+  span {
+    color: $dark-text;
+  }
+}
+
+// ----------------------------------------
+// Microcopy box
+// ----------------------------------------
+
+.microcopy-box {
+  background: linear-gradient(135deg, #132733, #2a1620);
+  border-color: $dark-border;
+  border-left-color: $rose-light;
+  color: $dark-text;
+}
+
+// ----------------------------------------
+// Buttons
+// ----------------------------------------
+
+.button-link {
+  background: #168aad;
+
+  &:hover {
+    background: $rose-light;
+    color: white;
+  }
+}
+
+// ----------------------------------------
+// Final CTA
+// ----------------------------------------
+
+.final-cta {
+  background: linear-gradient(135deg, #13343b, #0f5f6f);
+
+  .button-link {
+    background: rgba(255, 255, 255, 0.95);
+    color: #0f5f6f;
+
+    &:hover {
+      background: #2a1620;
+      color: $rose-light;
+    }
+  }
+}
+
+// ----------------------------------------
+// Title block
+// ----------------------------------------
+
+.quarto-title-block {
+  background: linear-gradient(135deg, #13343b, #132733);
+}
+
+// ----------------------------------------
+// Top banner
+// ----------------------------------------
+
+.top-banner img {
+  border-color: $dark-border;
+  box-shadow: none;
+}
+
+// ----------------------------------------
+// Sidebar TOC
+// ----------------------------------------
+
+.sidebar nav[role="doc-toc"] {
+  background: $dark-surface;
+  border-color: $dark-border;
+  box-shadow: none;
+
+  a {
+    color: $dark-muted;
+
+    &:hover {
+      color: $rose-light;
+    }
+  }
+}
+
+// ----------------------------------------
+// Form fields
+// ----------------------------------------
+
+.referral-form {
+  input,
+  select,
+  textarea {
+    background: $dark-bg;
+    border-color: $dark-border;
+    color: $dark-heading;
+
+    &:focus {
+      outline-color: rgba($teal-light, 0.4);
+      border-color: $teal-light;
+    }
+  }
+
+  button {
+    background: #168aad;
+
+    &:hover {
+      background: $rose-light;
+    }
+  }
+}

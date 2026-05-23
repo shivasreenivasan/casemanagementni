@@ -39,10 +39,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-45431c2918bd31147ddb3fa7038bb99f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-490d321efa6e0966914186c50367bf37.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-92ee8cd0a0c06b0c7e9391c945039213.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-490d321efa6e0966914186c50367bf37.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,7 +76,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
 
 
 <link rel="stylesheet" href="styles.css">
@@ -90,7 +94,169 @@ ul.task-list li input[type="checkbox"] {
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body class="floating nav-fixed quarto-light">
+<body class="floating nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -143,63 +309,41 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Professionals</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./faq.html"> 
-<span class="menu-text">FAQ</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./resources.html"> 
-<span class="menu-text">Resources</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./contact.html"> 
 <span class="menu-text">Contact</span></a>
   </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./privacy.html"> 
-<span class="menu-text">Privacy</span></a>
+    <a class="nav-link" href="./faq.html"> <i class="bi bi-question-circle" role="img" aria-label="Frequently asked questions">
+</i> 
+<span class="menu-text">FAQ</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
+    <a href="" title="" class="quarto-navigation-tool px-1" aria-label="Toggle dark mode"><i class="bi bi-moon"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#independent-case-management-across-northern-ireland" id="toc-independent-case-management-across-northern-ireland" class="nav-link active" data-scroll-target="#independent-case-management-across-northern-ireland">Independent Case Management Across Northern Ireland</a></li>
-  <li><a href="#how-we-help" id="toc-how-we-help" class="nav-link" data-scroll-target="#how-we-help">How We Help</a>
-  <ul class="collapse">
-  <li><a href="#rehabilitation-coordination" id="toc-rehabilitation-coordination" class="nav-link" data-scroll-target="#rehabilitation-coordination">Rehabilitation Coordination</a></li>
-  <li><a href="#case-management" id="toc-case-management" class="nav-link" data-scroll-target="#case-management">Case Management</a></li>
-  <li><a href="#person-centred-support" id="toc-person-centred-support" class="nav-link" data-scroll-target="#person-centred-support">Person-Centred Support</a></li>
-  </ul></li>
-  <li><a href="#our-approach" id="toc-our-approach" class="nav-link" data-scroll-target="#our-approach">Our Approach</a></li>
-  <li><a href="#current-industry-partners" id="toc-current-industry-partners" class="nav-link" data-scroll-target="#current-industry-partners">Current Industry Partners</a></li>
-  <li><a href="#our-focus" id="toc-our-focus" class="nav-link" data-scroll-target="#our-focus">Our Focus</a></li>
-  <li><a href="#what-people-say" id="toc-what-people-say" class="nav-link" data-scroll-target="#what-people-say">What People Say</a></li>
-  <li><a href="#who-we-help" id="toc-who-we-help" class="nav-link" data-scroll-target="#who-we-help">Who We Help</a></li>
-  <li><a href="#referral-pathway" id="toc-referral-pathway" class="nav-link" data-scroll-target="#referral-pathway">Referral Pathway</a></li>
-  <li><a href="#ready-to-discuss-a-referral" id="toc-ready-to-discuss-a-referral" class="nav-link" data-scroll-target="#ready-to-discuss-a-referral">Ready to discuss a referral?</a></li>
-  </ul>
-</nav>
+    
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-    </div>
+    
 <!-- main -->
-<main class="content column-page-right" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
+
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -208,7 +352,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta column-page-right">
+<div class="quarto-title-meta">
 
     
   
@@ -221,15 +365,20 @@ ul.task-list li input[type="checkbox"] {
 
 
 <div class="top-banner">
-<p><img src="images/social-preview.png" alt="Case Management NI banner"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/social-preview.png" class="img-fluid figure-img"></p>
+<figcaption>Case Management NI banner</figcaption>
+</figure>
 </div>
-<section id="independent-case-management-across-northern-ireland" class="level1 hero-section">
+</div>
+<section id="independent-case-management-across-northern-ireland" class="level1 hero-section" role="banner">
 <h1>Independent Case Management Across Northern Ireland</h1>
 <p>Professional, person-centred support following serious injury, illness, and complex rehabilitation needs.</p>
 <p><a href="./contact.html" class="button-link">Contact Us</a></p>
 </section>
-<div class="trust-badges">
-<p><span>HCPC Registered</span> <span>Northern Ireland Wide</span> <span>Person-Centred Support</span> <span>Collaborative Rehabilitation</span></p>
+<div class="trust-badges" role="list" aria-label="Credentials">
+<p><span role="listitem">HCPC Registered</span> <span role="listitem">Northern Ireland Wide</span> <span role="listitem">Person-Centred Support</span> <span role="listitem">Collaborative Rehabilitation</span></p>
 </div>
 <section id="how-we-help" class="level2">
 <h2 class="anchored" data-anchor-id="how-we-help">How We Help</h2>
@@ -239,92 +388,52 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="case-management" class="level3 service-card">
 <h3 class="anchored" data-anchor-id="case-management">Case Management</h3>
-<p>We work with clients, families, solicitors, insurers, and healthcare professionals to keep plans clear, joined-up, and realistic.</p>
+<p>We work with clients, families, solicitors, insurers, and healthcare professionals to keep plans clear, joined up, and realistic.</p>
 </section>
 <section id="person-centred-support" class="level3 service-card">
 <h3 class="anchored" data-anchor-id="person-centred-support">Person-Centred Support</h3>
 <p>Every plan is shaped around the person, their goals, their family, and their everyday life.</p>
 </section>
-</section>
-<section id="our-approach" class="level2 highlight-box">
-<h2 class="anchored" data-anchor-id="our-approach">Our Approach</h2>
+<section id="our-approach" class="level3 highlight-box">
+<h3 class="anchored" data-anchor-id="our-approach">Our Approach</h3>
 <p>Clear communication, practical planning, and compassionate support are at the centre of everything we do.</p>
 </section>
-<section id="current-industry-partners" class="level2">
-<h2 class="anchored" data-anchor-id="current-industry-partners">Current Industry Partners</h2>
-<div class="partner-banner">
-<div class="partner-track">
-<p><span>Brain Injury Matters</span></p>
-<p><span>Rehab Without Walls</span></p>
-<p><span>NI Community Support Network</span></p>
-<p><span>Independent Occupational Therapy Services</span></p>
-<p><span>Case Management Society UK</span></p>
-<p><span>Community Rehabilitation Providers</span></p>
-<p><span>Brain Injury Matters</span></p>
-<p><span>Rehab Without Walls</span></p>
-<p><span>NI Community Support Network</span></p>
-<p><span>Independent Occupational Therapy Services</span></p>
-</div>
-</div>
-<p><a href="contact.html" class="floating-contact"> Contact Us </a></p>
 </section>
 <section id="our-focus" class="level2">
 <h2 class="anchored" data-anchor-id="our-focus">Our Focus</h2>
 <div class="stats-grid">
-<div class="stat-card">
-<h2 class="anchored">
-Person-Centred
-</h2>
-<p>
-Support tailored to individual goals and everyday life.
-</p>
-</div>
-<div class="stat-card">
-<h2 class="anchored">
-Collaborative
-</h2>
-<p>
-Working alongside families and professionals.
-</p>
-</div>
-<div class="stat-card">
-<h2 class="anchored">
-Independent
-</h2>
-<p>
-Clear, practical, evidence-informed coordination.
-</p>
-</div>
+<section id="person-centred" class="level3 stat-card">
+<h3 class="anchored" data-anchor-id="person-centred">Person-Centred</h3>
+<p>Support tailored to individual goals and everyday life.</p>
+</section>
+<section id="collaborative" class="level3 stat-card">
+<h3 class="anchored" data-anchor-id="collaborative">Collaborative</h3>
+<p>Working alongside families and professionals.</p>
+</section>
+<section id="independent" class="level3 stat-card">
+<h3 class="anchored" data-anchor-id="independent">Independent</h3>
+<p>Clear, practical, evidence-informed coordination.</p>
+</section>
 </div>
 </section>
-<section id="what-people-say" class="level2">
-<h2 class="anchored" data-anchor-id="what-people-say">What People Say</h2>
-<div class="testimonial-carousel">
-<div class="testimonial-track">
+<section id="what-people-say" class="level2 visually-hidden-heading">
+<h2 class="visually-hidden-heading anchored" data-anchor-id="what-people-say">What People Say</h2>
+<div class="testimonial-grid">
 <div class="testimonial-card">
-<p>
-“Professional, compassionate, and highly organised support throughout rehabilitation.”
-</p>
+<p>“Professional, compassionate, and highly organised support throughout rehabilitation.”</p>
 <p><strong>Family member</strong></p>
 </div>
 <div class="testimonial-card">
-<p>
-“Clear communication and practical coordination made a complex situation much easier to manage.”
-</p>
+<p>“Clear communication and practical coordination made a complex situation much easier to manage.”</p>
 <p><strong>Solicitor</strong></p>
 </div>
 <div class="testimonial-card">
-<p>
-“The support felt calm, consistent, and genuinely person-centred.”
-</p>
+<p>“The support felt calm, consistent, and genuinely person-centred.”</p>
 <p><strong>Client feedback</strong></p>
 </div>
 <div class="testimonial-card">
-<p>
-“Reliable, thoughtful, and focused on meaningful outcomes.”
-</p>
+<p>“Reliable, thoughtful, and focused on meaningful outcomes.”</p>
 <p><strong>Healthcare professional</strong></p>
-</div>
 </div>
 </div>
 </section>
@@ -353,20 +462,26 @@ Clear, practical, evidence-informed coordination.
 <h2 class="anchored" data-anchor-id="referral-pathway">Referral Pathway</h2>
 <div class="pathway-strip">
 <div>
-<strong>1</strong><span>Enquiry</span>
+<p><strong>1</strong> <span class="pathway-label">Enquiry</span></p>
 </div>
 <div>
-<strong>2</strong><span>Discussion</span>
+<p><strong>2</strong> <span class="pathway-label">Discussion</span></p>
 </div>
 <div>
-<strong>3</strong><span>Assessment</span>
+<p><strong>3</strong> <span class="pathway-label">Assessment</span></p>
 </div>
 <div>
-<strong>4</strong><span>Planning</span>
+<p><strong>4</strong> <span class="pathway-label">Planning</span></p>
 </div>
 <div>
-<strong>5</strong><span>Coordination</span>
+<p><strong>5</strong> <span class="pathway-label">Coordination</span></p>
 </div>
+</div>
+</section>
+<section id="current-industry-partners" class="level2">
+<h2 class="anchored" data-anchor-id="current-industry-partners">Current Industry Partners</h2>
+<div class="partner-grid" role="list" aria-label="Industry partners">
+<p><span role="listitem">Brain Injury Matters</span> <span role="listitem">Rehab Without Walls</span> <span role="listitem">NI Community Support Network</span> <span role="listitem">Independent Occupational Therapy Services</span> <span role="listitem">Case Management Society UK</span> <span role="listitem">Community Rehabilitation Providers</span></p>
 </div>
 </section>
 <section id="ready-to-discuss-a-referral" class="level2 final-cta">
@@ -380,6 +495,19 @@ Clear, practical, evidence-informed coordination.
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -782,21 +910,32 @@ Clear, practical, evidence-informed coordination.
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>© Case Management NI</p>
+<p>© 2026 Case Management NI</p>
 </div>   
     <div class="nav-footer-center">
-      &nbsp;
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="./privacy.html">
+<p>Privacy</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="./faq.html">
+<p>FAQ</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="./resources.html">
+<p>Resources</p>
+</a>
+  </li>  
+</ul>
     </div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
     <a class="nav-link" href="./contact.html">
 <p>Contact</p>
-</a>
-  </li>  
-    <li class="nav-item">
-    <a class="nav-link" href="./resources.html">
-<p>Resources</p>
 </a>
   </li>  
 </ul>

@@ -1,0 +1,644 @@
+/*-- scss:defaults --*/
+
+// Colour palette
+$teal-900: #0b4a52;
+$teal-700: #0f5f6f;
+$teal-600: #0f6f8f;
+$teal-500: #2a9d8f;
+$teal-100: #e8f5f3;
+
+$rose-700: #a8305a;
+$rose-600: #c43868;
+$rose-100: #fff4f7;
+
+$slate-900: #1a2b33;
+$slate-700: #2f4f58;
+$slate-400: #7a99a5;
+$slate-200: #d0dfe5;
+$slate-100: #e7eef1;
+$slate-50: #f4f8fa;
+
+// Bootstrap / Quarto variable overrides
+$body-bg: $slate-50;
+$body-color: $slate-900;
+$link-color: $teal-600;
+$link-hover-color: $rose-700;
+
+$font-family-sans-serif: "Source Sans 3", system-ui, -apple-system, sans-serif;
+$font-size-base: 1.05rem;
+$line-height-base: 1.65;
+$headings-color: $teal-900;
+$headings-font-weight: 700;
+
+$border-color: $slate-200;
+$border-radius: 0.75rem;
+
+$navbar-bg: white;
+$navbar-fg: $slate-700;
+
+$footer-bg: white;
+$footer-fg: $slate-700;
+
+/*-- scss:rules --*/
+
+// ----------------------------------------
+// Focus styles (WCAG AA)
+// ----------------------------------------
+
+:focus-visible {
+  outline: 3px solid $rose-600;
+  outline-offset: 3px;
+}
+
+// ----------------------------------------
+// Reduced motion
+// ----------------------------------------
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+// ----------------------------------------
+// Navbar refinements
+// ----------------------------------------
+
+.navbar {
+  border-bottom: 1px solid $slate-200;
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.88) !important;
+}
+
+.navbar-title {
+  font-weight: 700;
+  color: $teal-900;
+}
+
+// ----------------------------------------
+// Typography refinements
+// ----------------------------------------
+
+h2 {
+  color: $teal-700;
+  margin-top: 2.2rem;
+  padding-top: 1.8rem;
+  border-top: 1px solid $slate-100;
+}
+
+// ----------------------------------------
+// Content width
+// ----------------------------------------
+
+main.content {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// ----------------------------------------
+// Quarto title block
+// ----------------------------------------
+
+.quarto-title-block {
+  background: linear-gradient(135deg, $teal-100, $slate-50);
+  padding: 2.5rem 2rem;
+  border-radius: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+// ----------------------------------------
+// Hero section
+// ----------------------------------------
+
+.hero-section {
+  background: linear-gradient(135deg, $teal-100 0%, $slate-50 55%, $rose-100 100%);
+  padding: 4rem 2.5rem;
+  border-radius: 1.5rem;
+  margin-bottom: 2.5rem;
+
+  h1 {
+    font-size: 2.8rem;
+    line-height: 1.12;
+    max-width: 860px;
+    color: $teal-900;
+  }
+
+  p {
+    font-size: 1.15rem;
+    max-width: 720px;
+    color: $slate-700;
+  }
+}
+
+// ----------------------------------------
+// Card base mixin
+// ----------------------------------------
+
+@mixin card-base {
+  background: white;
+  border: 1px solid $slate-200;
+  border-radius: 1rem;
+  padding: 1.4rem;
+  box-shadow: 0 4px 16px rgba($teal-900, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+@mixin card-hover {
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba($teal-900, 0.09);
+  }
+}
+
+// ----------------------------------------
+// Service cards
+// ----------------------------------------
+
+.service-card {
+  @include card-base;
+  @include card-hover;
+  border-left: 5px solid $teal-500;
+  margin: 1rem 0;
+
+  h3 {
+    margin-top: 0;
+    color: $teal-700;
+  }
+}
+
+// ----------------------------------------
+// Highlight box
+// ----------------------------------------
+
+.highlight-box {
+  background: $rose-100;
+  border: 1px solid $slate-200;
+  border-left: 5px solid $rose-600;
+  border-radius: 1rem;
+  padding: 1.4rem;
+  margin: 1.5rem 0;
+
+  h2 {
+    border-top: none;
+    padding-top: 0;
+    margin-top: 0;
+  }
+}
+
+// ----------------------------------------
+// Stat cards
+// ----------------------------------------
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+  margin: 2rem 0;
+}
+
+.stat-card {
+  @include card-base;
+  @include card-hover;
+  padding: 1.8rem;
+
+  h2 {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+    color: $teal-700;
+    font-size: 1.3rem;
+  }
+}
+
+// ----------------------------------------
+// Trust badges
+// ----------------------------------------
+
+.trust-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  margin: 1.2rem 0 2rem 0;
+
+  span {
+    white-space: nowrap;
+    background: white;
+    border: 1px solid $slate-200;
+    border-radius: 999px;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    font-size: 0.88rem;
+    color: $teal-700;
+    box-shadow: 0 2px 8px rgba($teal-900, 0.04);
+  }
+}
+
+// ----------------------------------------
+// Audience grid
+// ----------------------------------------
+
+.audience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.2rem;
+  margin: 2rem 0;
+}
+
+.audience-card {
+  @include card-base;
+  @include card-hover;
+
+  h3 {
+    margin-top: 0;
+    color: $teal-700;
+  }
+}
+
+// ----------------------------------------
+// Why / support grids
+// ----------------------------------------
+
+.why-grid,
+.support-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+  margin: 2rem 0;
+}
+
+.why-card,
+.support-card {
+  @include card-base;
+  @include card-hover;
+
+  h3 {
+    margin-top: 0;
+    color: $teal-700;
+  }
+}
+
+// ----------------------------------------
+// Process timeline
+// ----------------------------------------
+
+.process-timeline {
+  display: grid;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.process-step {
+  @include card-base;
+  border-left: 5px solid $teal-600;
+
+  h3 {
+    margin-top: 0;
+    color: $teal-700;
+  }
+}
+
+// ----------------------------------------
+// Pathway strip
+// ----------------------------------------
+
+.pathway-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin: 2rem 0;
+
+  div {
+    flex: 1 1 120px;
+    background: linear-gradient(135deg, $teal-100, $slate-50);
+    border: 1px solid $slate-200;
+    border-radius: 1rem;
+    padding: 1.2rem;
+    text-align: center;
+  }
+
+  strong {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    margin: 0 auto 0.5rem auto;
+    border-radius: 50%;
+    background: $teal-600;
+    color: white;
+    font-size: 0.95rem;
+  }
+
+  span {
+    font-weight: 700;
+    color: $teal-900;
+  }
+}
+
+// ----------------------------------------
+// Testimonials (static grid, not carousel)
+// ----------------------------------------
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.2rem;
+  margin: 2rem 0;
+}
+
+.testimonial-card {
+  @include card-base;
+  border-top: 4px solid $teal-500;
+
+  p {
+    color: $slate-700;
+    font-style: italic;
+  }
+
+  strong {
+    display: block;
+    margin-top: 0.8rem;
+    color: $teal-700;
+    font-style: normal;
+    font-size: 0.9rem;
+  }
+}
+
+// ----------------------------------------
+// Partner grid (static, not marquee)
+// ----------------------------------------
+
+.partner-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  margin: 1.5rem 0;
+
+  span {
+    white-space: nowrap;
+    background: white;
+    border: 1px solid $slate-200;
+    border-radius: 999px;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    font-size: 0.88rem;
+    color: $teal-700;
+    box-shadow: 0 2px 8px rgba($teal-900, 0.04);
+  }
+}
+
+// ----------------------------------------
+// Microcopy / reassurance box
+// ----------------------------------------
+
+.microcopy-box {
+  background: linear-gradient(135deg, $teal-100, $rose-100);
+  border: 1px solid $slate-200;
+  border-left: 5px solid $rose-600;
+  border-radius: 1rem;
+  padding: 1.4rem;
+  margin: 2.5rem 0;
+  font-weight: 600;
+  color: $teal-900;
+}
+
+// ----------------------------------------
+// Buttons
+// ----------------------------------------
+
+.button-link {
+  display: inline-block;
+  background: $teal-600;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 0.8rem;
+  transition: background 0.2s ease, transform 0.15s ease;
+
+  &:hover {
+    background: $rose-700;
+    color: white;
+    transform: translateY(-1px);
+  }
+}
+
+// ----------------------------------------
+// Final CTA
+// ----------------------------------------
+
+.final-cta {
+  margin: 3rem 0 2rem 0;
+  padding: 2.5rem 2rem;
+  border-radius: 1.25rem;
+  background: linear-gradient(135deg, $teal-700, $teal-500);
+  color: white;
+  text-align: center;
+
+  h2 {
+    color: white;
+    border-top: none;
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  p {
+    color: rgba(white, 0.92);
+  }
+
+  .button-link {
+    background: white;
+    color: $teal-700;
+
+    &:hover {
+      background: $rose-100;
+      color: $rose-700;
+    }
+  }
+}
+
+// ----------------------------------------
+// Top banner image
+// ----------------------------------------
+
+.top-banner {
+  margin-bottom: 2.5rem;
+
+  img {
+    width: 100%;
+    max-height: 480px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1.25rem;
+    border: 1px solid $slate-200;
+    box-shadow: 0 8px 32px rgba($teal-900, 0.08);
+  }
+}
+
+// ----------------------------------------
+// Table of contents
+// ----------------------------------------
+
+.sidebar nav[role="doc-toc"] {
+  position: sticky;
+  top: 4.5rem;
+  background: white;
+  border: 1px solid $slate-200;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 4px 16px rgba($teal-900, 0.05);
+
+  a {
+    color: $slate-700;
+    font-size: 0.92rem;
+
+    &:hover {
+      color: $rose-700;
+    }
+  }
+}
+
+// ----------------------------------------
+// Referral form
+// ----------------------------------------
+
+.referral-form {
+  @include card-base;
+  padding: 2rem;
+  margin: 2rem 0;
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 0.65rem 0.8rem;
+    border: 1px solid $slate-200;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-family: inherit;
+
+    &:focus {
+      outline: 3px solid rgba($teal-600, 0.35);
+      border-color: $teal-600;
+    }
+  }
+
+  button {
+    background: $teal-600;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s ease;
+
+    &:hover {
+      background: $rose-700;
+    }
+  }
+}
+
+// ----------------------------------------
+// Responsive
+// ----------------------------------------
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 2.2rem 1.2rem;
+    border-radius: 1.1rem;
+
+    h1 {
+      font-size: 2rem;
+      line-height: 1.15;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  .top-banner {
+    display: none;
+  }
+
+  .stats-grid,
+  .audience-grid,
+  .why-grid,
+  .support-grid,
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pathway-strip {
+    flex-direction: column;
+
+    div {
+      flex: none;
+    }
+  }
+
+  .button-link {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .final-cta {
+    padding: 2rem 1.2rem;
+    border-radius: 1.1rem;
+  }
+
+  .sidebar nav[role="doc-toc"] {
+    display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero-section h1 {
+    font-size: 1.85rem;
+  }
+
+  .trust-badges span {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.75rem;
+  }
+}
+
+// ----------------------------------------
+// Smooth scroll
+// ----------------------------------------
+
+html {
+  scroll-behavior: smooth;
+}
+
+// ----------------------------------------
+// Overflow protection
+// ----------------------------------------
+
+body {
+  overflow-x: hidden;
+}
+
+img,
+video,
+iframe {
+  max-width: 100%;
+  height: auto;
+}
