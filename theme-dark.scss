@@ -121,11 +121,22 @@ p {
 }
 
 // ----------------------------------------
-// Partner grid
+// Partner banner
 // ----------------------------------------
 
-.partner-grid span {
+.partner-banner {
+  background: linear-gradient(90deg, #13212a, $dark-bg);
+  border-color: $dark-border;
+}
+
+.partner-track span {
   background: $dark-surface;
+  border-color: $dark-border;
+  color: $dark-text;
+}
+
+.partner-pause {
+  background: rgba($dark-surface, 0.9);
   border-color: $dark-border;
   color: $dark-text;
 }

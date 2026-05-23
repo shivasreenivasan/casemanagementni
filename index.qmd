@@ -165,16 +165,23 @@ Joined-up working with therapists, clinicians, and support providers.
 
 ## Current Industry Partners
 
-::: {.partner-grid role="list" aria-label="Industry partners"}
-
-[Brain Injury Matters]{role="listitem"}
-[Rehab Without Walls]{role="listitem"}
-[NI Community Support Network]{role="listitem"}
-[Independent Occupational Therapy Services]{role="listitem"}
-[Case Management Society UK]{role="listitem"}
-[Community Rehabilitation Providers]{role="listitem"}
-
-:::
+<div class="partner-banner" aria-label="Industry partners">
+<button class="partner-pause" onclick="const t=this.closest('.partner-banner').querySelector('.partner-track');const p=t.style.animationPlayState==='paused';t.style.animationPlayState=p?'running':'paused';this.textContent=p?'Pause':'Play'" aria-label="Pause scrolling">Pause</button>
+<div class="partner-track">
+<span>Brain Injury Matters</span>
+<span>Rehab Without Walls</span>
+<span>NI Community Support Network</span>
+<span>Independent Occupational Therapy Services</span>
+<span>Case Management Society UK</span>
+<span>Community Rehabilitation Providers</span>
+<span>Brain Injury Matters</span>
+<span>Rehab Without Walls</span>
+<span>NI Community Support Network</span>
+<span>Independent Occupational Therapy Services</span>
+<span>Case Management Society UK</span>
+<span>Community Rehabilitation Providers</span>
+</div>
+</div>
 
 ::: {.final-cta}
 

@@ -372,15 +372,24 @@ main.content {
 }
 
 // ----------------------------------------
-// Partner grid (static, not marquee)
+// Partner banner (scrolling marquee)
 // ----------------------------------------
 
-.partner-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.6rem;
+.partner-banner {
+  overflow: hidden;
+  background: linear-gradient(90deg, $teal-100, $slate-50);
+  border: 1px solid $slate-200;
+  border-radius: 1rem;
+  padding: 0.8rem 0;
   margin: 1.5rem 0;
+  position: relative;
+}
+
+.partner-track {
+  display: flex;
+  width: max-content;
+  gap: 0.8rem;
+  animation: scrollPartners 30s linear infinite;
 
   span {
     white-space: nowrap;
@@ -392,6 +401,41 @@ main.content {
     font-size: 0.88rem;
     color: $teal-700;
     box-shadow: 0 2px 8px rgba($teal-900, 0.04);
+  }
+}
+
+// Pause on hover (mouse users)
+.partner-banner:hover .partner-track {
+  animation-play-state: paused;
+}
+
+// Pause button for keyboard / assistive tech users
+.partner-pause {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: rgba(white, 0.85);
+  border: 1px solid $slate-200;
+  border-radius: 0.4rem;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: $teal-700;
+  cursor: pointer;
+  z-index: 2;
+  backdrop-filter: blur(4px);
+
+  &:hover {
+    background: white;
+  }
+}
+
+@keyframes scrollPartners {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
   }
 }
 
