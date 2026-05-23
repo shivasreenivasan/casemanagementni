@@ -1,0 +1,23 @@
+---
+title: "Family Support"
+description: "Human-centred support for families navigating complex rehabilitation and care needs."
+---
+
+# Family Support
+
+Families often carry much of the practical and emotional weight following serious injury or complex health changes.
+
+::: {.highlight-box}
+We help families understand the process, coordinate support, and focus on practical next steps.
+:::
+
+## Support May Include
+
+- Explaining rehabilitation planning
+- Coordinating professionals
+- Supporting communication
+- Helping prepare for discharge or transition home
+- Identifying community support
+- Reviewing changing needs over time
+
+[Contact Us](contact.qmd){.button-link}

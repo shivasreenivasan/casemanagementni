@@ -1,0 +1,19 @@
+---
+title: "Neurorehabilitation Support"
+description: "Case management support for neurological rehabilitation needs."
+---
+
+# Neurorehabilitation Support
+
+We help coordinate support for people with neurological rehabilitation needs.
+
+## We May Support
+
+- Therapy coordination
+- Community-based rehabilitation
+- Equipment planning
+- Care liaison
+- Family communication
+- Goal review
+
+[Contact Us](../contact.qmd){.button-link}

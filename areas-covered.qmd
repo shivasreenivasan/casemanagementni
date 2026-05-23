@@ -1,0 +1,30 @@
+---
+title: "Areas Covered"
+description: "Case management and rehabilitation coordination across Northern Ireland."
+---
+
+# Areas Covered
+
+Case Management NI provides support across Northern Ireland, subject to referral needs and availability.
+
+## Areas May Include
+
+::: {.service-card}
+### Greater Belfast
+
+Belfast, Lisburn, Newtownabbey, Bangor, and surrounding areas.
+:::
+
+::: {.service-card}
+### County Down and County Antrim
+
+Community-based support across towns and rural areas.
+:::
+
+::: {.service-card}
+### Wider Northern Ireland
+
+Enquiries from other areas are welcome and considered individually.
+:::
+
+[Make an Enquiry](contact.qmd){.button-link}

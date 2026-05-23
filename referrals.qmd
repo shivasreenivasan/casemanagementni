@@ -1,18 +1,49 @@
 ---
 title: "Referrals"
+description: "Referral information for case management and rehabilitation coordination across Northern Ireland."
 ---
 
 # Referrals
 
-We accept professional and private enquiries relating to case management and rehabilitation coordination.
+We welcome enquiries from individuals, families, solicitors, insurers, healthcare professionals, and support providers.
 
-## Suitable referrals may include
+::: {.highlight-box}
+Our aim is to make the referral process clear, calm, and practical from the first conversation.
+:::
 
-- Serious injury
-- Complex rehabilitation needs
-- Brain injury
-- Spinal injury
-- Long-term support planning
-- Multi-disciplinary coordination
+## Who Can Refer?
+
+- Solicitors
+- Insurers
+- Healthcare professionals
+- Therapists
+- Families
+- Individuals seeking support
+
+## What Happens Next?
+
+::: {.service-card}
+### 1. Initial Enquiry
+
+We review the enquiry and identify whether case management support may be suitable.
+:::
+
+::: {.service-card}
+### 2. Needs Discussion
+
+We discuss current circumstances, priorities, risks, and support needs.
+:::
+
+::: {.service-card}
+### 3. Assessment and Planning
+
+Where appropriate, we arrange assessment and develop a clear support plan.
+:::
+
+::: {.service-card}
+### 4. Ongoing Coordination
+
+We liaise with relevant professionals and services to support practical progress.
+:::
 
 [Make an Enquiry](contact.qmd){.button-link}

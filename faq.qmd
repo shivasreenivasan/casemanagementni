@@ -1,0 +1,42 @@
+---
+title: "FAQ"
+description: "Frequently asked questions about case management, referrals, funding, and support."
+---
+
+# Frequently Asked Questions
+
+::: {.service-card}
+### Who can make a referral?
+
+Referrals may come from solicitors, insurers, clinicians, families, or individuals.
+:::
+
+::: {.service-card}
+### Do you work across Northern Ireland?
+
+Yes. We support clients across Northern Ireland, depending on referral needs and availability.
+:::
+
+::: {.service-card}
+### Do you support litigation cases?
+
+Yes. We can work alongside legal representatives, insurers, rehabilitation providers, and treating professionals.
+:::
+
+::: {.service-card}
+### Do you provide reports?
+
+Reports can be provided where agreed as part of the case management process.
+:::
+
+::: {.service-card}
+### Can families contact you directly?
+
+Yes. Families are welcome to make an initial enquiry.
+:::
+
+::: {.service-card}
+### Should I send medical information through the website?
+
+No. Please do not send confidential medical information through the website unless this has been agreed in advance.
+:::

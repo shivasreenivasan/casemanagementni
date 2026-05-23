@@ -1,0 +1,23 @@
+---
+title: "Brain Injury Case Management"
+description: "Brain injury case management and rehabilitation coordination across Northern Ireland."
+---
+
+# Brain Injury Case Management
+
+We support individuals and families following acquired or traumatic brain injury.
+
+## Support May Include
+
+- Rehabilitation coordination
+- Cognitive support planning
+- Community reintegration
+- Therapy liaison
+- Family support
+- Equipment and care coordination
+
+::: {.highlight-box}
+Brain injury support should be practical, consistent, and shaped around real life.
+:::
+
+[Make an Enquiry](../contact.qmd){.button-link}

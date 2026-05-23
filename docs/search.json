@@ -1,24 +1,108 @@
 [
   {
-    "objectID": "resources.html",
-    "href": "resources.html",
-    "title": "Resources",
+    "objectID": "services/catastrophic-injury.html",
+    "href": "services/catastrophic-injury.html",
+    "title": "Catastrophic Injury Support",
     "section": "",
-    "text": "Resources\nThis page will include useful guidance for clients, families, and professionals.\n\nComing Soon\nGuides, referral information, useful links, and downloadable resources will be added here."
+    "text": "Catastrophic Injury Support\nFollowing serious injury, people often need coordinated support across healthcare, rehabilitation, family life, care, and community services.\n\nCoordinated Support\nWe help keep rehabilitation, care, equipment, and professional input joined up.\n\n\nPractical Planning\nWe focus on safety, independence, quality of life, and meaningful progress.\n\nDiscuss a Referral"
   },
   {
-    "objectID": "referrals.html",
-    "href": "referrals.html",
-    "title": "Referrals",
+    "objectID": "services/brain-injury.html",
+    "href": "services/brain-injury.html",
+    "title": "Brain Injury Case Management",
     "section": "",
-    "text": "We accept professional and private enquiries relating to case management and rehabilitation coordination.\n\n\n\nSerious injury\nComplex rehabilitation needs\nBrain injury\nSpinal injury\nLong-term support planning\nMulti-disciplinary coordination\n\nMake an Enquiry"
+    "text": "We support individuals and families following acquired or traumatic brain injury.\n\n\n\nRehabilitation coordination\nCognitive support planning\nCommunity reintegration\nTherapy liaison\nFamily support\nEquipment and care coordination\n\n\nBrain injury support should be practical, consistent, and shaped around real life.\n\nMake an Enquiry"
   },
   {
-    "objectID": "referrals.html#suitable-referrals-may-include",
-    "href": "referrals.html#suitable-referrals-may-include",
-    "title": "Referrals",
+    "objectID": "services/brain-injury.html#support-may-include",
+    "href": "services/brain-injury.html#support-may-include",
+    "title": "Brain Injury Case Management",
     "section": "",
-    "text": "Serious injury\nComplex rehabilitation needs\nBrain injury\nSpinal injury\nLong-term support planning\nMulti-disciplinary coordination\n\nMake an Enquiry"
+    "text": "Rehabilitation coordination\nCognitive support planning\nCommunity reintegration\nTherapy liaison\nFamily support\nEquipment and care coordination\n\n\nBrain injury support should be practical, consistent, and shaped around real life.\n\nMake an Enquiry"
+  },
+  {
+    "objectID": "privacy.html",
+    "href": "privacy.html",
+    "title": "Privacy",
+    "section": "",
+    "text": "Privacy\nCase Management NI respects your privacy.\nInformation submitted through this website will only be used to respond to your enquiry.\nPlease do not submit confidential medical information unless this has been agreed in advance."
+  },
+  {
+    "objectID": "areas-covered.html",
+    "href": "areas-covered.html",
+    "title": "Areas Covered",
+    "section": "",
+    "text": "Case Management NI provides support across Northern Ireland, subject to referral needs and availability.\n\n\n\n\nBelfast, Lisburn, Newtownabbey, Bangor, and surrounding areas.\n\n\n\nCommunity-based support across towns and rural areas.\n\n\n\nEnquiries from other areas are welcome and considered individually.\n\nMake an Enquiry"
+  },
+  {
+    "objectID": "areas-covered.html#areas-may-include",
+    "href": "areas-covered.html#areas-may-include",
+    "title": "Areas Covered",
+    "section": "",
+    "text": "Belfast, Lisburn, Newtownabbey, Bangor, and surrounding areas.\n\n\n\nCommunity-based support across towns and rural areas.\n\n\n\nEnquiries from other areas are welcome and considered individually.\n\nMake an Enquiry"
+  },
+  {
+    "objectID": "faq.html",
+    "href": "faq.html",
+    "title": "FAQ",
+    "section": "",
+    "text": "Frequently Asked Questions\n\nWho can make a referral?\nReferrals may come from solicitors, insurers, clinicians, families, or individuals.\n\n\nDo you work across Northern Ireland?\nYes. We support clients across Northern Ireland, depending on referral needs and availability.\n\n\nDo you support litigation cases?\nYes. We can work alongside legal representatives, insurers, rehabilitation providers, and treating professionals.\n\n\nDo you provide reports?\nReports can be provided where agreed as part of the case management process.\n\n\nCan families contact you directly?\nYes. Families are welcome to make an initial enquiry.\n\n\nShould I send medical information through the website?\nNo. Please do not send confidential medical information through the website unless this has been agreed in advance."
+  },
+  {
+    "objectID": "professionals.html",
+    "href": "professionals.html",
+    "title": "For Professionals",
+    "section": "",
+    "text": "We work collaboratively with professionals involved in rehabilitation, care planning, litigation, and community support.\n\nOur role is to provide clear communication, practical coordination, and person-centred support.\n\n\n\n\nSolicitors\nInsurers\nOccupational therapists\nPhysiotherapists\nSpeech and language therapists\nNeuropsychologists\nConsultants\nGPs\nCare providers\nCommunity services\n\n\n\n\n\n\nRegular liaison and practical updates where agreed.\n\n\n\nSupport plans shaped around individual needs, risks, goals, and available services.\n\n\n\nWorking alongside existing teams rather than duplicating professional input.\n\nDiscuss a Referral"
+  },
+  {
+    "objectID": "professionals.html#we-work-with",
+    "href": "professionals.html#we-work-with",
+    "title": "For Professionals",
+    "section": "",
+    "text": "Solicitors\nInsurers\nOccupational therapists\nPhysiotherapists\nSpeech and language therapists\nNeuropsychologists\nConsultants\nGPs\nCare providers\nCommunity services"
+  },
+  {
+    "objectID": "professionals.html#professional-approach",
+    "href": "professionals.html#professional-approach",
+    "title": "For Professionals",
+    "section": "",
+    "text": "Regular liaison and practical updates where agreed.\n\n\n\nSupport plans shaped around individual needs, risks, goals, and available services.\n\n\n\nWorking alongside existing teams rather than duplicating professional input.\n\nDiscuss a Referral"
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "Contact\nFor referrals, professional enquiries, or general questions, please get in touch.\n\n\nEmail\ninfo@casemanagementni.co.uk\n\n\nTelephone\n07800 000000\n\n\n\nPlease do not send confidential personal or medical information by email unless this has been agreed in advance."
+  },
+  {
+    "objectID": "services.html",
+    "href": "services.html",
+    "title": "Services",
+    "section": "",
+    "text": "We provide practical, coordinated support for people with complex needs.\n\n\nA clear assessment of current needs, priorities, risks, and support requirements.\n\n\n\nCoordinating therapy, equipment, care, and community-based support.\n\n\n\nRegular review, liaison, planning, and progress monitoring.\n\n\n\nWorking with solicitors, insurers, therapists, GPs, consultants, and care providers."
+  },
+  {
+    "objectID": "services.html#services",
+    "href": "services.html#services",
+    "title": "Services",
+    "section": "",
+    "text": "We provide practical, coordinated support for people with complex needs.\n\n\nA clear assessment of current needs, priorities, risks, and support requirements.\n\n\n\nCoordinating therapy, equipment, care, and community-based support.\n\n\n\nRegular review, liaison, planning, and progress monitoring.\n\n\n\nWorking with solicitors, insurers, therapists, GPs, consultants, and care providers."
+  },
+  {
+    "objectID": "family-support.html",
+    "href": "family-support.html",
+    "title": "Family Support",
+    "section": "",
+    "text": "Families often carry much of the practical and emotional weight following serious injury or complex health changes.\n\nWe help families understand the process, coordinate support, and focus on practical next steps.\n\n\n\n\nExplaining rehabilitation planning\nCoordinating professionals\nSupporting communication\nHelping prepare for discharge or transition home\nIdentifying community support\nReviewing changing needs over time\n\nContact Us"
+  },
+  {
+    "objectID": "family-support.html#support-may-include",
+    "href": "family-support.html#support-may-include",
+    "title": "Family Support",
+    "section": "",
+    "text": "Explaining rehabilitation planning\nCoordinating professionals\nSupporting communication\nHelping prepare for discharge or transition home\nIdentifying community support\nReviewing changing needs over time\n\nContact Us"
   },
   {
     "objectID": "index.html#how-we-help",
@@ -56,27 +140,6 @@
     "text": "What People Say\n\n\n\n\n“Professional, compassionate, and highly organised support throughout rehabilitation.”\n\nFamily member\n\n\n\n“Clear communication and practical coordination made a complex situation much easier to manage.”\n\nSolicitor\n\n\n\n“The support felt calm, consistent, and genuinely person-centred.”\n\nClient feedback\n\n\n\n“Reliable, thoughtful, and focused on meaningful outcomes.”\n\nHealthcare professional"
   },
   {
-    "objectID": "services.html",
-    "href": "services.html",
-    "title": "Services",
-    "section": "",
-    "text": "We provide practical, coordinated support for people with complex needs.\n\n\nA clear assessment of current needs, priorities, risks, and support requirements.\n\n\n\nCoordinating therapy, equipment, care, and community-based support.\n\n\n\nRegular review, liaison, planning, and progress monitoring.\n\n\n\nWorking with solicitors, insurers, therapists, GPs, consultants, and care providers."
-  },
-  {
-    "objectID": "services.html#services",
-    "href": "services.html#services",
-    "title": "Services",
-    "section": "",
-    "text": "We provide practical, coordinated support for people with complex needs.\n\n\nA clear assessment of current needs, priorities, risks, and support requirements.\n\n\n\nCoordinating therapy, equipment, care, and community-based support.\n\n\n\nRegular review, liaison, planning, and progress monitoring.\n\n\n\nWorking with solicitors, insurers, therapists, GPs, consultants, and care providers."
-  },
-  {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact",
-    "section": "",
-    "text": "Contact\nFor referrals, professional enquiries, or general questions, please get in touch.\n\n\nEmail\ninfo@casemanagementni.co.uk\n\n\nTelephone\n07800 000000\n\n\n\nPlease do not send confidential personal or medical information by email unless this has been agreed in advance."
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -84,10 +147,52 @@
     "text": "About Case Management NI\nCase Management NI provides independent case management and rehabilitation coordination across Northern Ireland.\nOur approach is professional, calm, practical, and human-centred.\n\nWe focus on what matters most to the person: independence, safety, confidence, family life, and meaningful progress."
   },
   {
-    "objectID": "privacy.html",
-    "href": "privacy.html",
-    "title": "Privacy",
+    "objectID": "process.html",
+    "href": "process.html",
+    "title": "Our Process",
     "section": "",
-    "text": "Privacy\nCase Management NI respects your privacy.\nInformation submitted through this website will only be used to respond to your enquiry.\nPlease do not submit confidential medical information unless this has been agreed in advance."
+    "text": "Our Process\nWe keep the process clear, structured, and focused on practical outcomes.\n\n\n1. Initial Contact\nWe receive the enquiry and consider whether case management support may be appropriate.\n\n\n2. Discussion\nWe discuss the person’s current situation, priorities, risks, and support needs.\n\n\n3. Assessment\nWhere agreed, we complete or coordinate assessment to understand needs in more detail.\n\n\n4. Planning\nWe help develop a practical, person-centred plan.\n\n\n5. Coordination\nWe liaise with relevant services and professionals to support progress.\n\n\nStart a Referral"
+  },
+  {
+    "objectID": "referrals.html",
+    "href": "referrals.html",
+    "title": "Referrals",
+    "section": "",
+    "text": "We welcome enquiries from individuals, families, solicitors, insurers, healthcare professionals, and support providers.\n\nOur aim is to make the referral process clear, calm, and practical from the first conversation.\n\n\n\n\nSolicitors\nInsurers\nHealthcare professionals\nTherapists\nFamilies\nIndividuals seeking support\n\n\n\n\n\n\nWe review the enquiry and identify whether case management support may be suitable.\n\n\n\nWe discuss current circumstances, priorities, risks, and support needs.\n\n\n\nWhere appropriate, we arrange assessment and develop a clear support plan.\n\n\n\nWe liaise with relevant professionals and services to support practical progress.\n\nMake an Enquiry"
+  },
+  {
+    "objectID": "referrals.html#who-can-refer",
+    "href": "referrals.html#who-can-refer",
+    "title": "Referrals",
+    "section": "",
+    "text": "Solicitors\nInsurers\nHealthcare professionals\nTherapists\nFamilies\nIndividuals seeking support"
+  },
+  {
+    "objectID": "referrals.html#what-happens-next",
+    "href": "referrals.html#what-happens-next",
+    "title": "Referrals",
+    "section": "",
+    "text": "We review the enquiry and identify whether case management support may be suitable.\n\n\n\nWe discuss current circumstances, priorities, risks, and support needs.\n\n\n\nWhere appropriate, we arrange assessment and develop a clear support plan.\n\n\n\nWe liaise with relevant professionals and services to support practical progress.\n\nMake an Enquiry"
+  },
+  {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Resources",
+    "section": "",
+    "text": "Resources\nThis page will include useful guidance for clients, families, and professionals.\n\nComing Soon\nGuides, referral information, useful links, and downloadable resources will be added here."
+  },
+  {
+    "objectID": "services/neurorehabilitation.html",
+    "href": "services/neurorehabilitation.html",
+    "title": "Neurorehabilitation Support",
+    "section": "",
+    "text": "We help coordinate support for people with neurological rehabilitation needs.\n\n\n\nTherapy coordination\nCommunity-based rehabilitation\nEquipment planning\nCare liaison\nFamily communication\nGoal review\n\nContact Us"
+  },
+  {
+    "objectID": "services/neurorehabilitation.html#we-may-support",
+    "href": "services/neurorehabilitation.html#we-may-support",
+    "title": "Neurorehabilitation Support",
+    "section": "",
+    "text": "Therapy coordination\nCommunity-based rehabilitation\nEquipment planning\nCare liaison\nFamily communication\nGoal review\n\nContact Us"
   }
 ]

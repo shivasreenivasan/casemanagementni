@@ -1,0 +1,22 @@
+---
+title: "Catastrophic Injury Support"
+description: "Case management and rehabilitation coordination following serious and life-changing injury."
+---
+
+# Catastrophic Injury Support
+
+Following serious injury, people often need coordinated support across healthcare, rehabilitation, family life, care, and community services.
+
+::: {.service-card}
+### Coordinated Support
+
+We help keep rehabilitation, care, equipment, and professional input joined up.
+:::
+
+::: {.service-card}
+### Practical Planning
+
+We focus on safety, independence, quality of life, and meaningful progress.
+:::
+
+[Discuss a Referral](../contact.qmd){.button-link}

@@ -1,0 +1,44 @@
+---
+title: "Our Process"
+description: "A clear step-by-step overview of the case management process."
+---
+
+# Our Process
+
+We keep the process clear, structured, and focused on practical outcomes.
+
+::: {.process-timeline}
+
+::: {.process-step}
+### 1. Initial Contact
+
+We receive the enquiry and consider whether case management support may be appropriate.
+:::
+
+::: {.process-step}
+### 2. Discussion
+
+We discuss the person's current situation, priorities, risks, and support needs.
+:::
+
+::: {.process-step}
+### 3. Assessment
+
+Where agreed, we complete or coordinate assessment to understand needs in more detail.
+:::
+
+::: {.process-step}
+### 4. Planning
+
+We help develop a practical, person-centred plan.
+:::
+
+::: {.process-step}
+### 5. Coordination
+
+We liaise with relevant services and professionals to support progress.
+:::
+
+:::
+
+[Start a Referral](contact.qmd){.button-link}

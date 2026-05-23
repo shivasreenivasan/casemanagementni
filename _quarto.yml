@@ -12,8 +12,22 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: services.qmd
-        text: Services
+      - text: Services
+        menu: 
+          - href: services.qmd
+            text: Overview
+          - href: services/brain-injury.qmd
+            text: Brain Injury
+          - href: services/neurorehabilitation.qmd
+            text: Neurorehabilitation
+          - href: services/catastrophic-injury.qmd
+            text: Catastrophic Injury
+      - href: referrals.qmd
+        text: Referrals
+      - href: professionals.qmd
+        text: Professionals
+      - href: faq.qmd
+        text: FAQ
       - href: about.qmd
         text: About
       - href: resources.qmd
@@ -39,3 +53,8 @@ format:
     toc-location: right
     page-layout: full
     image: images/social-preview.png
+    include-in-header:
+      text: |
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">

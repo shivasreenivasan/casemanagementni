@@ -1,0 +1,47 @@
+---
+title: "For Professionals"
+description: "Information for solicitors, insurers, clinicians, and rehabilitation professionals."
+---
+
+# For Professionals
+
+We work collaboratively with professionals involved in rehabilitation, care planning, litigation, and community support.
+
+::: {.highlight-box}
+Our role is to provide clear communication, practical coordination, and person-centred support.
+:::
+
+## We Work With
+
+- Solicitors
+- Insurers
+- Occupational therapists
+- Physiotherapists
+- Speech and language therapists
+- Neuropsychologists
+- Consultants
+- GPs
+- Care providers
+- Community services
+
+## Professional Approach
+
+::: {.service-card}
+### Clear Communication
+
+Regular liaison and practical updates where agreed.
+:::
+
+::: {.service-card}
+### Coordinated Planning
+
+Support plans shaped around individual needs, risks, goals, and available services.
+:::
+
+::: {.service-card}
+### Collaborative Working
+
+Working alongside existing teams rather than duplicating professional input.
+:::
+
+[Discuss a Referral](contact.qmd){.button-link}
