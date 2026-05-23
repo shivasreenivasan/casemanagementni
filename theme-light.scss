@@ -77,7 +77,6 @@ $footer-fg: $slate-700;
 
 .navbar-title {
   font-weight: 700;
-  color: $teal-900;
 }
 
 // ----------------------------------------
@@ -85,7 +84,6 @@ $footer-fg: $slate-700;
 // ----------------------------------------
 
 h2 {
-  color: $teal-700;
   margin-top: 2.2rem;
   padding-top: 1.8rem;
   border-top: 1px solid $slate-100;
@@ -99,6 +97,8 @@ main.content {
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 // ----------------------------------------
@@ -126,13 +126,11 @@ main.content {
     font-size: 2.8rem;
     line-height: 1.12;
     max-width: 860px;
-    color: $teal-900;
   }
 
   p {
     font-size: 1.15rem;
     max-width: 720px;
-    color: $slate-700;
   }
 }
 
@@ -168,7 +166,6 @@ main.content {
 
   h3 {
     margin-top: 0;
-    color: $teal-700;
   }
 }
 
@@ -184,7 +181,7 @@ main.content {
   padding: 1.4rem;
   margin: 1.5rem 0;
 
-  h2 {
+  h2, h3 {
     border-top: none;
     padding-top: 0;
     margin-top: 0;
@@ -207,11 +204,10 @@ main.content {
   @include card-hover;
   padding: 1.8rem;
 
-  h2 {
+  h2, h3 {
     margin-top: 0;
     padding-top: 0;
     border-top: none;
-    color: $teal-700;
     font-size: 1.3rem;
   }
 }
@@ -257,7 +253,6 @@ main.content {
 
   h3 {
     margin-top: 0;
-    color: $teal-700;
   }
 }
 
@@ -280,7 +275,6 @@ main.content {
 
   h3 {
     margin-top: 0;
-    color: $teal-700;
   }
 }
 
@@ -300,7 +294,6 @@ main.content {
 
   h3 {
     margin-top: 0;
-    color: $teal-700;
   }
 }
 
@@ -338,12 +331,11 @@ main.content {
 
   span {
     font-weight: 700;
-    color: $teal-900;
   }
 }
 
 // ----------------------------------------
-// Testimonials (static grid, not carousel)
+// Testimonials (static grid)
 // ----------------------------------------
 
 .testimonial-grid {
@@ -358,14 +350,12 @@ main.content {
   border-top: 4px solid $teal-500;
 
   p {
-    color: $slate-700;
     font-style: italic;
   }
 
   strong {
     display: block;
     margin-top: 0.8rem;
-    color: $teal-700;
     font-style: normal;
     font-size: 0.9rem;
   }
@@ -390,6 +380,7 @@ main.content {
   width: max-content;
   gap: 0.8rem;
   animation: scrollPartners 30s linear infinite;
+  padding-left: 0.8rem;
 
   span {
     white-space: nowrap;
@@ -451,7 +442,6 @@ main.content {
   padding: 1.4rem;
   margin: 2.5rem 0;
   font-weight: 600;
-  color: $teal-900;
 }
 
 // ----------------------------------------
@@ -542,12 +532,7 @@ main.content {
   box-shadow: 0 4px 16px rgba($teal-900, 0.05);
 
   a {
-    color: $slate-700;
     font-size: 0.92rem;
-
-    &:hover {
-      color: $rose-700;
-    }
   }
 }
 
@@ -599,12 +584,18 @@ main.content {
 // ----------------------------------------
 
 @media (max-width: 768px) {
+  main.content {
+    max-width: 100%;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+
   .hero-section {
-    padding: 2.2rem 1.2rem;
+    padding: 2rem 1.2rem;
     border-radius: 1.1rem;
 
     h1 {
-      font-size: 2rem;
+      font-size: 1.9rem;
       line-height: 1.15;
     }
 
@@ -633,6 +624,24 @@ main.content {
     }
   }
 
+  .trust-badges {
+    gap: 0.4rem;
+
+    span {
+      font-size: 0.82rem;
+      padding: 0.4rem 0.75rem;
+    }
+  }
+
+  .partner-banner {
+    border-radius: 0.75rem;
+    margin-left: -0.8rem;
+    margin-right: -0.8rem;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+  }
+
   .button-link {
     display: block;
     width: 100%;
@@ -647,20 +656,29 @@ main.content {
   .sidebar nav[role="doc-toc"] {
     display: none;
   }
+
+  .quarto-title-block {
+    padding: 1.5rem 1rem;
+    border-radius: 0.75rem;
+  }
 }
 
 @media (max-width: 420px) {
   h1 {
-    font-size: 1.75rem;
+    font-size: 1.65rem;
   }
 
-  .hero-section h1 {
-    font-size: 1.85rem;
+  .hero-section {
+    padding: 1.6rem 1rem;
+
+    h1 {
+      font-size: 1.7rem;
+    }
   }
 
   .trust-badges span {
-    font-size: 0.85rem;
-    padding: 0.4rem 0.75rem;
+    font-size: 0.78rem;
+    padding: 0.35rem 0.65rem;
   }
 }
 

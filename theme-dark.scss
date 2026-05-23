@@ -34,14 +34,22 @@ $footer-fg: $dark-muted;
 .navbar {
   border-bottom: 1px solid $dark-border;
   backdrop-filter: blur(12px);
+  background: rgba(15, 23, 32, 0.88) !important;
+}
+
+.navbar-title {
+  color: $dark-heading;
 }
 
 // ----------------------------------------
-// Typography
+// Typography — all headings visible
 // ----------------------------------------
 
+h1, h2, h3, h4, h5, h6 {
+  color: $dark-heading;
+}
+
 h2 {
-  color: $teal-accent;
   border-top-color: $dark-border;
 }
 
@@ -88,15 +96,24 @@ p {
 
 .service-card h3,
 .stat-card h2,
+.stat-card h3,
 .audience-card h3,
 .why-card h3,
 .support-card h3,
-.process-step h3,
+.process-step h3 {
+  color: $teal-accent;
+}
+
 .testimonial-card strong {
   color: $teal-accent;
 }
 
-.stat-card h2 {
+.testimonial-card p {
+  color: $dark-muted;
+}
+
+.stat-card h2,
+.stat-card h3 {
   border-top: none;
 }
 
@@ -108,6 +125,10 @@ p {
   background: #2a1620;
   border-color: $dark-border;
   border-left-color: $rose-light;
+
+  h2, h3 {
+    color: $dark-heading;
+  }
 }
 
 // ----------------------------------------
@@ -139,6 +160,10 @@ p {
   background: rgba($dark-surface, 0.9);
   border-color: $dark-border;
   color: $dark-text;
+
+  &:hover {
+    background: $dark-surface;
+  }
 }
 
 // ----------------------------------------
@@ -153,6 +178,10 @@ p {
 
   span {
     color: $dark-text;
+  }
+
+  strong {
+    background: #168aad;
   }
 }
 
@@ -186,6 +215,14 @@ p {
 
 .final-cta {
   background: linear-gradient(135deg, #13343b, #0f5f6f);
+
+  h2 {
+    color: white;
+  }
+
+  p {
+    color: rgba(255, 255, 255, 0.9);
+  }
 
   .button-link {
     background: rgba(255, 255, 255, 0.95);
