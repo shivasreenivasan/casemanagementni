@@ -1,7 +1,7 @@
 ---
 title: "Case Management NI"
 title-block-banner: false
-toc: false
+toc: true
 ---
 
 ::: {.top-banner}
