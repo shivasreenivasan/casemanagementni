@@ -6,6 +6,15 @@ title: "Case Management NI"
 ![](images/social-preview.png)
 :::
 
+::: {.trust-badges}
+
+<span>HCPC Registered</span>
+<span>Northern Ireland Wide</span>
+<span>Person-Centred Support</span>
+<span>Collaborative Rehabilitation</span>
+
+:::
+
 ::: {.hero-section}
 
 # Independent Case Management Across Northern Ireland
@@ -121,4 +130,56 @@ Contact Us
 </div>
 
 </div>
+:::
+
+## Who We Help
+
+::: {.audience-grid}
+
+::: {.audience-card}
+### Individuals
+
+Support after serious injury, illness, or complex rehabilitation needs.
+:::
+
+::: {.audience-card}
+### Families
+
+Clear guidance and coordination when life feels complicated.
+:::
+
+::: {.audience-card}
+### Solicitors
+
+Collaborative case management support for medico-legal matters.
+:::
+
+::: {.audience-card}
+### Healthcare Professionals
+
+Joined-up working with therapists, clinicians, and support providers.
+:::
+
+:::
+
+## Referral Pathway
+
+::: {.pathway-strip}
+
+<div><strong>1</strong><span>Enquiry</span></div>
+<div><strong>2</strong><span>Discussion</span></div>
+<div><strong>3</strong><span>Assessment</span></div>
+<div><strong>4</strong><span>Planning</span></div>
+<div><strong>5</strong><span>Coordination</span></div>
+
+:::
+
+::: {.final-cta}
+
+## Ready to discuss a referral?
+
+We are happy to have an initial conversation about whether case management support may be suitable.
+
+[Make an Enquiry](contact.qmd){.button-link}
+
 :::

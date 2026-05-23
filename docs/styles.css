@@ -749,3 +749,278 @@ body {
   margin-top: 0;
   color: #0f5f6f;
 }
+
+.audience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+  margin: 2rem 0;
+}
+
+.audience-card {
+  background: #ffffff;
+  border: 1px solid #d9e6ea;
+  border-radius: 24px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 24px rgba(18, 52, 59, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.audience-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 36px rgba(18, 52, 59, 0.1);
+}
+
+.pathway-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.pathway-strip div {
+  flex: 1 1 150px;
+  background: linear-gradient(135deg, #e8f5f3, #eef6fb);
+  border: 1px solid #d9e6ea;
+  border-radius: 22px;
+  padding: 1.3rem;
+  text-align: center;
+}
+
+.pathway-strip strong {
+  display: block;
+  width: 42px;
+  height: 42px;
+  margin: 0 auto 0.6rem auto;
+  border-radius: 50%;
+  background: #0f6f8f;
+  color: white;
+  line-height: 42px;
+}
+
+.pathway-strip span {
+  font-weight: 700;
+  color: #12343b;
+}
+
+.final-cta {
+  margin: 4rem 0 2rem 0;
+  padding: 3rem 2rem;
+  border-radius: 32px;
+  background: linear-gradient(135deg, #0f5f6f, #2a9d8f);
+  color: white;
+  text-align: center;
+}
+
+.final-cta h2,
+.final-cta p {
+  color: white;
+}
+
+.final-cta .button-link {
+  background: white;
+  color: #0f5f6f;
+}
+
+.final-cta .button-link:hover {
+  background: #fff4f7;
+  color: #b8325f;
+}
+
+/* ========================================
+   Trust badges
+======================================== */
+
+.trust-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin: 1.5rem 0 2.5rem 0;
+}
+
+.trust-badges span {
+  background: #ffffff;
+  border: 1px solid #d9e6ea;
+  border-radius: 999px;
+  padding: 0.65rem 1rem;
+  font-weight: 650;
+  color: #0f5f6f;
+  box-shadow: 0 4px 12px rgba(18, 52, 59, 0.05);
+}
+
+/* ========================================
+   Why choose us
+======================================== */
+
+.why-grid,
+.support-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.3rem;
+  margin: 2rem 0 3rem 0;
+}
+
+.why-card,
+.support-card {
+  background: #ffffff;
+  border: 1px solid #d9e6ea;
+  border-radius: 24px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 24px rgba(18, 52, 59, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.why-card:hover,
+.support-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 36px rgba(18, 52, 59, 0.1);
+}
+
+.why-card h3,
+.support-card h3 {
+  color: #0f5f6f;
+  margin-top: 0;
+}
+
+/* ========================================
+   Reassurance microcopy
+======================================== */
+
+.microcopy-box {
+  background: linear-gradient(135deg, #e8f5f3, #fff4f7);
+  border: 1px solid #d9e6ea;
+  border-left: 6px solid #d94f70;
+  border-radius: 24px;
+  padding: 1.5rem;
+  margin: 3rem 0;
+  font-weight: 600;
+  color: #12343b;
+}
+
+/* ========================================
+   Final polish and fixes
+======================================== */
+
+/* Fix scroll progress animation */
+
+@keyframes scrollProgress {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/* Better global typography */
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  letter-spacing: 0.005em;
+}
+
+/* Better page width */
+
+main.content {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Improve all card-like components consistently */
+
+.service-card,
+.highlight-box,
+.stat-card,
+.testimonial-card,
+.process-step,
+.audience-card,
+.why-card,
+.support-card,
+.microcopy-box {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.service-card:hover,
+.stat-card:hover,
+.testimonial-card:hover,
+.process-step:hover,
+.audience-card:hover,
+.why-card:hover,
+.support-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 36px rgba(18, 52, 59, 0.1);
+}
+
+/* Better image banner on mobile */
+
+@media (max-width: 700px) {
+  .top-banner img {
+    max-height: 320px;
+    border-radius: 22px;
+  }
+}
+
+/* Better partner and testimonial scrolling on mobile */
+
+@media (max-width: 520px) {
+  .testimonial-track,
+  .partner-track {
+    animation-duration: 48s;
+  }
+}
+
+/* Dark mode for newer sections */
+
+@media (prefers-color-scheme: dark) {
+
+  .trust-badges span,
+  .why-card,
+  .support-card,
+  .audience-card,
+  .process-step,
+  .microcopy-box,
+  .pathway-strip div {
+    background: #16212b;
+    border-color: #253744;
+    color: #dbe7ec;
+    box-shadow: none;
+  }
+
+  .why-card h3,
+  .support-card h3,
+  .audience-card h3,
+  .process-step h3 {
+    color: #8ad4e8;
+  }
+
+  .trust-badges span {
+    color: #8ad4e8;
+  }
+
+  .microcopy-box {
+    background: linear-gradient(135deg, #132733, #2a1620);
+    border-left-color: #ff6f96;
+  }
+
+  .pathway-strip div {
+    background: linear-gradient(135deg, #132733, #16212b);
+  }
+
+  .pathway-strip span {
+    color: #dbe7ec;
+  }
+
+  .top-banner img {
+    border-color: #253744;
+    box-shadow: none;
+  }
+
+  .final-cta {
+    background: linear-gradient(135deg, #13343b, #0f5f6f);
+  }
+}
