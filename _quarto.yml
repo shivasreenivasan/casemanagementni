@@ -47,7 +47,7 @@ website:
 
 format:
   html:
-    theme: cosmo
+    theme: dracula
     css: styles.css
     toc: true
     toc-location: left
