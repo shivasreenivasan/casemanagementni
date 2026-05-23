@@ -362,6 +362,35 @@ main.content {
 }
 
 // ----------------------------------------
+// Download cards
+// ----------------------------------------
+
+.download-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.2rem;
+  margin: 2rem 0;
+}
+
+.download-card {
+  @include card-base;
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+    margin-top: 0;
+  }
+
+  p {
+    flex: 1;
+  }
+
+  .button-link {
+    align-self: flex-start;
+  }
+}
+
+// ----------------------------------------
 // Partner banner (scrolling marquee)
 // ----------------------------------------
 
@@ -612,7 +641,8 @@ main.content {
   .audience-grid,
   .why-grid,
   .support-grid,
-  .testimonial-grid {
+  .testimonial-grid,
+  .download-grid {
     grid-template-columns: 1fr;
   }
 

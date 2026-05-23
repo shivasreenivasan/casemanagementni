@@ -29,6 +29,8 @@ website:
         text: Professionals
       - href: about.qmd
         text: About
+      - text: Resources
+        href: resources.qmd
       - href: contact.qmd
         text: Contact
     right:
@@ -48,8 +50,6 @@ website:
         href: privacy.qmd
       - text: "FAQ"
         href: faq.qmd
-      - text: "Resources"
-        href: resources.qmd
     right:
       - text: "Contact"
         href: contact.qmd

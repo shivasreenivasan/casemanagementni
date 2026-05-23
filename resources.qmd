@@ -11,3 +11,19 @@ This page will include useful guidance for clients, families, and professionals.
 
 Guides, referral information, useful links, and downloadable resources will be added here.
 :::
+
+## Downloadable Resources
+
+Autism assessment banner
+
+::: {.download-grid}
+
+::: {.download-card}
+### Banner
+
+Our national autism assessment and intervention service banner.
+
+[Download PDF](downloads/NAAIS.pdf){.button-link download="Autism-banner.pdf"}
+:::
+
+:::
