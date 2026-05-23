@@ -1361,3 +1361,35 @@ main.content {
     color: #ffffff !important;
   }
 }
+
+/* Final homepage mobile fix */
+
+@media screen and (max-width: 768px) {
+
+  .top-banner,
+  .top-banner img,
+  div.top-banner {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    max-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+  }
+
+  .quarto-title-block {
+    display: none !important;
+  }
+
+  .hero-section {
+    margin-top: 1rem !important;
+    padding: 2rem 1.2rem !important;
+    border-radius: 24px !important;
+  }
+
+  .hero-section h1 {
+    font-size: 2.15rem !important;
+    line-height: 1.12 !important;
+  }
+}
