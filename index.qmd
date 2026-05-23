@@ -6,15 +6,6 @@ title: "Case Management NI"
 ![](images/social-preview.png)
 :::
 
-::: {.trust-badges}
-
-<span>HCPC Registered</span>
-<span>Northern Ireland Wide</span>
-<span>Person-Centred Support</span>
-<span>Collaborative Rehabilitation</span>
-
-:::
-
 ::: {.hero-section}
 
 # Independent Case Management Across Northern Ireland
@@ -22,6 +13,15 @@ title: "Case Management NI"
 Professional, person-centred support following serious injury, illness, and complex rehabilitation needs.
 
 [Contact Us](contact.qmd){.button-link}
+
+:::
+
+::: {.trust-badges}
+
+<span>HCPC Registered</span>
+<span>Northern Ireland Wide</span>
+<span>Person-Centred Support</span>
+<span>Collaborative Rehabilitation</span>
 
 :::
 
