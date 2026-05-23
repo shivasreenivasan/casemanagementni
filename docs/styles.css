@@ -334,3 +334,282 @@ h2 {
     transform: translateX(-50%);
   }
 }
+
+/* ========================================
+   Dark mode
+======================================== */
+
+@media (prefers-color-scheme: dark) {
+
+  body {
+    background: #0f1720;
+    color: #dbe7ec;
+  }
+
+  h1, h2, h3 {
+    color: #f2f7fa;
+  }
+
+  p {
+    color: #d2dde2;
+  }
+
+  a {
+    color: #72c6e6;
+  }
+
+  a:hover {
+    color: #ff7da2;
+  }
+
+  /* Navbar */
+
+  .navbar {
+    background: rgba(15, 23, 32, 0.82);
+    border-bottom: 1px solid #22313c;
+    backdrop-filter: blur(14px);
+  }
+
+  .navbar-title,
+  .navbar-nav .nav-link {
+    color: #e7f0f4;
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #72c6e6;
+  }
+
+  /* Hero */
+
+  .hero-section {
+    background:
+      linear-gradient(
+        135deg,
+        #13343b 0%,
+        #132733 50%,
+        #341b2a 100%
+      );
+  }
+
+  /* Cards */
+
+  .service-card,
+  .highlight-box,
+  .stat-card,
+  .testimonial-card,
+  .referral-form,
+  .sidebar nav[role="doc-toc"] {
+
+    background: #16212b;
+    border-color: #253744;
+    box-shadow: none;
+  }
+
+  .service-card h3,
+  .stat-card h2,
+  .testimonial-card strong {
+    color: #8ad4e8;
+  }
+
+  .highlight-box {
+    background: #2a1620;
+    border-left-color: #ff6f96;
+  }
+
+  /* Form fields */
+
+  .referral-form input,
+  .referral-form select,
+  .referral-form textarea {
+
+    background: #0f1720;
+    border-color: #314553;
+    color: #f2f7fa;
+  }
+
+  .referral-form input:focus,
+  .referral-form select:focus,
+  .referral-form textarea:focus {
+
+    outline: 3px solid #1d4f59;
+    border-color: #72c6e6;
+  }
+
+  /* Buttons */
+
+  .button-link,
+  .floating-contact,
+  .referral-form button {
+
+    background: #168aad;
+    color: white;
+  }
+
+  .button-link:hover,
+  .floating-contact:hover,
+  .referral-form button:hover {
+
+    background: #ff6f96;
+    color: white;
+  }
+
+  /* Partner banner */
+
+  .partner-banner {
+    background:
+      linear-gradient(
+        90deg,
+        #13212a,
+        #0f1720
+      );
+
+    border-color: #253744;
+  }
+
+  .partner-track span {
+    background: #16212b;
+    border-color: #314553;
+    color: #dbe7ec;
+  }
+
+  /* TOC */
+
+  .sidebar nav[role="doc-toc"] a {
+    color: #dbe7ec;
+  }
+
+  .sidebar nav[role="doc-toc"] a:hover {
+    color: #ff7da2;
+  }
+
+  /* Section dividers */
+
+  h2 {
+    border-top-color: #22313c;
+  }
+}
+
+/* ========================================
+   Mobile-first optimisation
+======================================== */
+
+/* Better sizing on all screens */
+
+img,
+video,
+iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+main.content {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Tablet and mobile */
+
+@media (max-width: 900px) {
+
+  h1 {
+    font-size: 2.1rem;
+    line-height: 1.15;
+  }
+
+  h2 {
+    font-size: 1.45rem;
+  }
+
+  .hero-section {
+    padding: 3rem 1.5rem;
+    border-radius: 24px;
+  }
+
+  .hero-section h1 {
+    font-size: 2.4rem;
+  }
+
+  .service-card,
+  .highlight-box,
+  .stat-card,
+  .testimonial-card,
+  .referral-form {
+    border-radius: 18px;
+    padding: 1.25rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-card {
+    width: 280px;
+  }
+
+  .floating-contact {
+    right: 16px;
+    bottom: 16px;
+    padding: 0.85rem 1.1rem;
+    font-size: 0.95rem;
+  }
+
+  .sidebar nav[role="doc-toc"] {
+    display: none;
+  }
+}
+
+/* Small phones */
+
+@media (max-width: 520px) {
+
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 1.85rem;
+  }
+
+  .hero-section {
+    padding: 2.2rem 1.1rem;
+    margin-bottom: 2rem;
+  }
+
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+
+  .button-link {
+    width: 100%;
+    text-align: center;
+  }
+
+  .floating-contact {
+    left: 16px;
+    right: 16px;
+    text-align: center;
+  }
+
+  .partner-track span {
+    padding: 0.6rem 0.9rem;
+    font-size: 0.9rem;
+  }
+
+  .referral-form {
+    padding: 1rem;
+  }
+
+  .referral-form input,
+  .referral-form select,
+  .referral-form textarea {
+    font-size: 16px;
+  }
+}
