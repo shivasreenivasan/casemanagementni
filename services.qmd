@@ -2,7 +2,7 @@
 title: "Services"
 ---
 
-# Services
+## Services {icon="heart-pulse"}
 
 We provide practical, coordinated support for people with complex needs.
 

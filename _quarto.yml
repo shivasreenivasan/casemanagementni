@@ -31,5 +31,6 @@ format:
   html:
     theme: cosmo
     css: styles.css
-    toc: false
+    toc: true
+    toc-location: right
     page-layout: full

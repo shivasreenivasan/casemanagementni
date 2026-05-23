@@ -2,13 +2,15 @@
 title: "Case Management NI"
 ---
 
-# Independent Case Management Support
+::: {.hero-section}
 
-Professional, person-centred case management services across Northern Ireland.
+# Independent Case Management Across Northern Ireland
 
-We support people following serious injury, illness, or life-changing events, helping them access the right rehabilitation, care, and practical support.
+Professional, person-centred support following serious injury, illness, and complex rehabilitation needs.
 
 [Contact Us](contact.qmd){.button-link}
+
+:::
 
 ## How We Help
 
@@ -34,4 +36,85 @@ Every plan is shaped around the person, their goals, their family, and their eve
 ## Our Approach
 
 Clear communication, practical planning, and compassionate support are at the centre of everything we do.
+:::
+
+## Current Industry Partners
+
+::: {.partner-banner}
+<div class="partner-track">
+
+<span>Brain Injury Matters</span>
+
+<span>Rehab Without Walls</span>
+
+<span>NI Community Support Network</span>
+
+<span>Independent Occupational Therapy Services</span>
+
+<span>Case Management Society UK</span>
+
+<span>Community Rehabilitation Providers</span>
+
+<span>Brain Injury Matters</span>
+
+<span>Rehab Without Walls</span>
+
+<span>NI Community Support Network</span>
+
+<span>Independent Occupational Therapy Services</span>
+
+</div>
+:::
+
+<a href="contact.html" class="floating-contact">
+Contact Us
+</a>
+
+## Our Focus
+
+::: {.stats-grid}
+
+<div class="stat-card">
+<h2>Person-Centred</h2>
+<p>Support tailored to individual goals and everyday life.</p>
+</div>
+
+<div class="stat-card">
+<h2>Collaborative</h2>
+<p>Working alongside families and professionals.</p>
+</div>
+
+<div class="stat-card">
+<h2>Independent</h2>
+<p>Clear, practical, evidence-informed coordination.</p>
+</div>
+
+:::
+
+## What People Say
+
+::: {.testimonial-carousel}
+<div class="testimonial-track">
+
+<div class="testimonial-card">
+<p>“Professional, compassionate, and highly organised support throughout rehabilitation.”</p>
+<strong>Family member</strong>
+</div>
+
+<div class="testimonial-card">
+<p>“Clear communication and practical coordination made a complex situation much easier to manage.”</p>
+<strong>Solicitor</strong>
+</div>
+
+<div class="testimonial-card">
+<p>“The support felt calm, consistent, and genuinely person-centred.”</p>
+<strong>Client feedback</strong>
+</div>
+
+<div class="testimonial-card">
+<p>“Reliable, thoughtful, and focused on meaningful outcomes.”</p>
+<strong>Healthcare professional</strong>
+</div>
+
+</div>
 :::
