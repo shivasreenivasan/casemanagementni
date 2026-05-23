@@ -1221,3 +1221,43 @@ main.content {
     text-align: center;
   }
 }
+
+/* ========================================
+   Mobile hero optimisation
+======================================== */
+
+@media (max-width: 768px) {
+
+  /* Hide large banner image on phones */
+
+  .top-banner {
+    display: none;
+  }
+
+  /* Promote text hero instead */
+
+  .hero-section {
+    display: block;
+    margin-top: 1rem;
+
+    background:
+      linear-gradient(
+        135deg,
+        #e8f5f3 0%,
+        #eef6fb 55%,
+        #fff4f7 100%
+      );
+
+    padding: 2.2rem 1.2rem;
+    border-radius: 22px;
+  }
+
+  .hero-section h1 {
+    font-size: 2rem;
+    line-height: 1.15;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+}
