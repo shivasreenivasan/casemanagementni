@@ -50,7 +50,7 @@ format:
     theme: cosmo
     css: styles.css
     toc: true
-    toc-location: right
+    toc-location: left
     page-layout: full
     image: images/social-preview.png
     include-in-header:
