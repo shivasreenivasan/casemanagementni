@@ -1,0 +1,37 @@
+---
+title: "Case Management NI"
+---
+
+# Independent Case Management Support
+
+Professional, person-centred case management services across Northern Ireland.
+
+We support people following serious injury, illness, or life-changing events, helping them access the right rehabilitation, care, and practical support.
+
+[Contact Us](contact.qmd){.button-link}
+
+## How We Help
+
+::: {.service-card}
+### Rehabilitation Coordination
+
+We help coordinate therapy, care, equipment, community services, and ongoing support.
+:::
+
+::: {.service-card}
+### Case Management
+
+We work with clients, families, solicitors, insurers, and healthcare professionals to keep plans clear, joined-up, and realistic.
+:::
+
+::: {.service-card}
+### Person-Centred Support
+
+Every plan is shaped around the person, their goals, their family, and their everyday life.
+:::
+
+::: {.highlight-box}
+## Our Approach
+
+Clear communication, practical planning, and compassionate support are at the centre of everything we do.
+:::

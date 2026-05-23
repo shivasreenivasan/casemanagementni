@@ -1,0 +1,13 @@
+---
+title: "About"
+---
+
+# About Case Management NI
+
+Case Management NI provides independent case management and rehabilitation coordination across Northern Ireland.
+
+Our approach is professional, calm, practical, and human-centred.
+
+::: {.highlight-box}
+We focus on what matters most to the person: independence, safety, confidence, family life, and meaningful progress.
+:::

@@ -1,0 +1,35 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Case Management NI"
+  site-url: "https://casemanagementni.co.uk"
+
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: services.qmd
+        text: Services
+      - href: about.qmd
+        text: About
+      - href: resources.qmd
+        text: Resources
+      - href: contact.qmd
+        text: Contact
+
+  page-footer:
+    left: "© Case Management NI"
+    right:
+      - text: "Contact"
+        href: contact.qmd
+      - text: "Resources"
+        href: resources.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: false
+    page-layout: full

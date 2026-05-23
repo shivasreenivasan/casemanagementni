@@ -1,0 +1,31 @@
+---
+title: "Services"
+---
+
+# Services
+
+We provide practical, coordinated support for people with complex needs.
+
+::: {.service-card}
+### Initial Needs Assessment
+
+A clear assessment of current needs, priorities, risks, and support requirements.
+:::
+
+::: {.service-card}
+### Rehabilitation Planning
+
+Coordinating therapy, equipment, care, and community-based support.
+:::
+
+::: {.service-card}
+### Ongoing Case Management
+
+Regular review, liaison, planning, and progress monitoring.
+:::
+
+::: {.service-card}
+### Professional Liaison
+
+Working with solicitors, insurers, therapists, GPs, consultants, and care providers.
+:::

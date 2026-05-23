@@ -1,0 +1,21 @@
+---
+title: "Contact"
+---
+
+# Contact
+
+For referrals, professional enquiries, or general questions, please get in touch.
+
+::: {.service-card}
+### Email
+
+[hello@casemanagementni.co.uk](mailto:hello@casemanagementni.co.uk)
+
+### Telephone
+
+07800 000000
+:::
+
+::: {.highlight-box}
+Please do not send confidential personal or medical information by email unless this has been agreed in advance.
+:::
