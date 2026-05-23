@@ -10,6 +10,7 @@ website:
 
   navbar:
     background: light
+    pinned: true
     left:
       - href: index.qmd
         text: Home
@@ -29,8 +30,6 @@ website:
         text: Professionals
       - href: about.qmd
         text: About
-      - text: Resources
-        href: resources.qmd
       - href: contact.qmd
         text: Contact
     right:
@@ -50,6 +49,8 @@ website:
         href: privacy.qmd
       - text: "FAQ"
         href: faq.qmd
+      - text: "Resources"
+        href: resources.qmd
     right:
       - text: "Contact"
         href: contact.qmd
@@ -62,7 +63,13 @@ format:
     css: styles.css
     toc: true
     toc-location: left
+    toc-expand: 2
     page-layout: article
+    grid:
+      sidebar-width: 220px
+      body-width: 820px
+      margin-width: 0px
+      gutter-width: 2rem
     mainfont: "Source Sans 3"
     image: images/social-preview.png
     include-in-header:

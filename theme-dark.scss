@@ -34,7 +34,8 @@ $footer-fg: $dark-muted;
 .navbar {
   border-bottom: 1px solid $dark-border;
   backdrop-filter: blur(12px);
-  background: rgba(15, 23, 32, 0.88) !important;
+  -webkit-backdrop-filter: blur(12px);
+  background: rgba(15, 23, 32, 0.92) !important;
 }
 
 .navbar-title {
@@ -257,17 +258,24 @@ p {
 // Sidebar TOC
 // ----------------------------------------
 
-.sidebar nav[role="doc-toc"] {
-  background: $dark-surface;
-  border-color: $dark-border;
-  box-shadow: none;
-
+#quarto-sidebar-toc-left,
+.sidebar nav[role="doc-toc"],
+nav#TOC {
   a {
     color: $dark-muted;
 
     &:hover {
       color: $rose-light;
     }
+
+    &.active {
+      color: $teal-light;
+    }
+  }
+
+  #toc-title,
+  .toc-actions {
+    color: $teal-accent;
   }
 }
 

@@ -72,7 +72,8 @@ $footer-fg: $slate-700;
 .navbar {
   border-bottom: 1px solid $slate-200;
   backdrop-filter: blur(12px);
-  background: rgba(255, 255, 255, 0.88) !important;
+  -webkit-backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.92) !important;
 }
 
 .navbar-title {
@@ -90,16 +91,9 @@ h2 {
 }
 
 // ----------------------------------------
-// Content width
+// Content width — use Quarto's grid, not max-width
+// (grid widths set in _quarto.yml)
 // ----------------------------------------
-
-main.content {
-  max-width: 960px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
 
 // ----------------------------------------
 // Quarto title block
@@ -551,17 +545,42 @@ main.content {
 // Table of contents
 // ----------------------------------------
 
-.sidebar nav[role="doc-toc"] {
+#quarto-sidebar-toc-left,
+.sidebar nav[role="doc-toc"],
+nav#TOC {
   position: sticky;
   top: 4.5rem;
-  background: white;
-  border: 1px solid $slate-200;
-  border-radius: 1rem;
-  padding: 1rem;
-  box-shadow: 0 4px 16px rgba($teal-900, 0.05);
+
+  .toc-actions,
+  #toc-title {
+    font-weight: 600;
+    font-size: 0.88rem;
+    color: $teal-700;
+    margin-bottom: 0.5rem;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  li {
+    margin-bottom: 0.25rem;
+  }
 
   a {
-    font-size: 0.92rem;
+    font-size: 0.9rem;
+    color: $slate-700;
+    text-decoration: none;
+
+    &:hover {
+      color: $rose-700;
+    }
+
+    &.active {
+      color: $teal-600;
+      font-weight: 600;
+    }
   }
 }
 
@@ -613,11 +632,6 @@ main.content {
 // ----------------------------------------
 
 @media (max-width: 768px) {
-  main.content {
-    max-width: 100%;
-    padding-left: 0.8rem;
-    padding-right: 0.8rem;
-  }
 
   .hero-section {
     padding: 2rem 1.2rem;
@@ -683,7 +697,9 @@ main.content {
     border-radius: 1.1rem;
   }
 
-  .sidebar nav[role="doc-toc"] {
+  #quarto-sidebar-toc-left,
+  .sidebar nav[role="doc-toc"],
+  nav#TOC {
     display: none;
   }
 
@@ -723,10 +739,6 @@ html {
 // ----------------------------------------
 // Overflow protection
 // ----------------------------------------
-
-body {
-  overflow-x: hidden;
-}
 
 img,
 video,
