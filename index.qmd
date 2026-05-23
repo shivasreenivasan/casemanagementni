@@ -1,10 +1,11 @@
 ---
 title: "Case Management NI"
+title-block-banner: false
 ---
 
-::: {.top=banner}
-![](images/social-preview.png)
-:::
+<div class="top-banner">
+  <img src="images/social-preview.png" alt="Case Management NI banner">
+</div>
 
 ::: {.hero-section}
 

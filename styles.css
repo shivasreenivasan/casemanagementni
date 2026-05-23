@@ -1393,3 +1393,21 @@ main.content {
     line-height: 1.12 !important;
   }
 }
+
+@media screen and (max-width: 768px) {
+
+  body .top-banner,
+  body .top-banner img,
+  body .homepage-image,
+  body .homepage-image img,
+  body img[src*="social-preview"],
+  body img[src*="image.png"] {
+    display: none !important;
+  }
+
+  body .quarto-title-block,
+  body header.quarto-title-block,
+  body #title-block-header {
+    display: none !important;
+  }
+}
