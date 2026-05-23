@@ -1,5 +1,6 @@
 ---
 title: "About"
+description: "Independent case management and rehabilitation coordination services across Northern Ireland."
 ---
 
 # About Case Management NI

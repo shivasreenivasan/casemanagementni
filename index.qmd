@@ -2,6 +2,10 @@
 title: "Case Management NI"
 ---
 
+::: {.top=banner}
+![](images/social-preview.png)
+:::
+
 ::: {.hero-section}
 
 # Independent Case Management Across Northern Ireland

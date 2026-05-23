@@ -1,5 +1,6 @@
 ---
 title: "Contact"
+description: "Independent case management and rehabilitation coordination services across Northern Ireland."
 ---
 
 # Contact

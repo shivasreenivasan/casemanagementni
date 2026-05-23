@@ -5,6 +5,8 @@ project:
 website:
   title: "Case Management NI"
   site-url: "https://casemanagementni.co.uk"
+  open-graph: true
+  twitter-card: true
 
   navbar:
     left:
@@ -18,6 +20,8 @@ website:
         text: Resources
       - href: contact.qmd
         text: Contact
+      - href: privacy.qmd
+        text: Privacy
 
   page-footer:
     left: "© Case Management NI"
@@ -34,3 +38,4 @@ format:
     toc: true
     toc-location: right
     page-layout: full
+    image: images/social-preview.png
