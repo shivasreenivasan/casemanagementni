@@ -1123,3 +1123,101 @@ main.content {
     text-align: center;
   }
 }
+
+/* ========================================
+   Homepage mobile rescue
+======================================== */
+
+@media (max-width: 768px) {
+
+  /* Stop homepage sections escaping screen width */
+
+  .top-banner,
+  .hero-section,
+  .trust-badges,
+  .stats-grid,
+  .audience-grid,
+  .why-grid,
+  .support-grid,
+  .pathway-strip,
+  .testimonial-carousel,
+  .partner-banner,
+  .final-cta,
+  .microcopy-box {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* Make banner behave on phones */
+
+  .top-banner img {
+    width: 100%;
+    height: auto;
+    max-height: none;
+    object-fit: contain;
+    border-radius: 18px;
+  }
+
+  /* Stack all homepage grids */
+
+  .stats-grid,
+  .audience-grid,
+  .why-grid,
+  .support-grid,
+  .pathway-strip {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
+  }
+
+  /* Make badges wrap cleanly */
+
+  .trust-badges {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .trust-badges span {
+    font-size: 0.88rem;
+    line-height: 1.2;
+  }
+
+  /* Prevent carousel/tickers causing horizontal overflow */
+
+  .testimonial-carousel,
+  .partner-banner {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .testimonial-card {
+    width: min(280px, 82vw);
+  }
+
+  .partner-track span {
+    white-space: nowrap;
+  }
+
+  /* Make CTA and sections less huge */
+
+  .hero-section,
+  .final-cta {
+    padding: 2rem 1rem;
+    border-radius: 20px;
+  }
+
+  .hero-section h1 {
+    font-size: 2rem;
+    line-height: 1.15;
+  }
+
+  /* Fixed button can cover content on mobile */
+
+  .floating-contact {
+    position: static;
+    display: block;
+    margin: 2rem 0 0 0;
+    width: 100%;
+    text-align: center;
+  }
+}
